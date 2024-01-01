@@ -1,6 +1,6 @@
 # Wolf Face Animation Project
 
-![Wolf Face]{WOLF Face project - CG.jpg}
+![Wolf face](https://github.com/abdulazimRabie/CG-Wolf/assets/114117038/2d21f036-0cc2-463f-a076-ecace1375faa)
 
 ## Overview
 
