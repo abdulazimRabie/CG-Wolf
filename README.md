@@ -1,12 +1,17 @@
 # Wolf Face Animation Project
 
+![Wolf Face]{WOLF Face project - CG.jpg}
+
 ## Overview
+
 This project demonstrates a simple animation of a wolf's face using the OpenGL library. The wolf's face is drawn with various facial features, and the animation allows the face to move horizontally.
 
 ## Files
+
 - **wolf_animation.cpp:** The main source code file containing the OpenGL code for drawing the wolf's face, handling animation, and keyboard interactions.
 
 ## Features
+
 1. **Nose:** Draws the nose of the wolf's face. (Function: `nose()`)
 2. **Right Cheek:** Draws the right cheek of the wolf's face. (Function: `rightCheek()`)
 3. **Left Cheek:** Draws the left cheek of the wolf's face. (Function: `leftCheek()`)
@@ -18,17 +23,20 @@ This project demonstrates a simple animation of a wolf's face using the OpenGL l
 9. **Teeth:** Draws the teeth of the wolf's face. (Function: `teeth()`)
 
 ## Animation
+
 - The wolf's face can move horizontally to the right when the animation is enabled.
 - Pressing the 'V' key toggles the animation on and off. (Function: `keyboardFunc()`)
 - The timer function controls the animation by triggering a redraw at regular intervals. (Function: `timerFunc()`)
 
 ## Usage
+
 1. Compile the code using an OpenGL-compatible compiler.
 2. Run the executable.
 3. The window displays the animated wolf's face.
 4. Press the 'V' key to toggle the animation.
 
 ## Additional Notes
+
 - Adjust the timer interval and animation speed in the code as needed.
 - Feel free to modify the drawing functions to customize the wolf's face.
 

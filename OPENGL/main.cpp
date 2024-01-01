@@ -4,8 +4,8 @@
 
 const double pi = 22.0 / 7.0;
 
-GLfloat wolfPositionX = 1.0;  // Initial position of the wolf's face
-GLboolean animationEnabled = GL_FALSE;  // Flag to control animation
+GLfloat wolfPositionX = 1.0;  // wolf's face position
+GLboolean animationEnabled = GL_FALSE;  // flag to toggle 
 
 
 void nose() {
@@ -443,8 +443,8 @@ void wolf() {
     // Translate the wolf's face horizontally based on the current position
     glPushMatrix();
     glTranslatef(wolfPositionX, 0.0, 0.0);
+    
     // Draw the wolf's face at the translated position
-    // (you may need to adjust the drawing functions accordingly)
     nose();
     rightCheek();
     leftCheek();
@@ -459,14 +459,14 @@ void wolf() {
 
     // Update the wolf's position for the next frame if animation is enabled
     if (animationEnabled) {
-        wolfPositionX += 1.0;  // Adjust the speed as needed
+        wolfPositionX += 1.0;  // Adding steps to the existed positions and move it
     }
 }
 
 // Timer callback function
 void timerFunc(int value) {
     glutPostRedisplay();  // Trigger a redraw
-    glutTimerFunc(190, timerFunc, 0);  // Set a slower time interval (50 milliseconds)
+    glutTimerFunc(190, timerFunc, 0);  // Control how speed it will translate
 }
 
 // Keyboard callback function
